@@ -1,0 +1,21 @@
+﻿body {
+    background-color: #8A2BE2;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.btn-custom {
+    background-color: #9b59b6;
+    border: none;
+    color: white;
+}
+
+    .btn-custom:hover {
+        background-color: #8e44ad;
+    }
