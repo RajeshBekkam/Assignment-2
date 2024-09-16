@@ -60,7 +60,11 @@ document.getElementById('addressForm').addEventListener('submit', function (even
     isValid = validateFieldWithRegex('vatNumber', 'vatNumberError', /^\d{6}$/, 'Please enter a valid VAT Number (6 digits).') && isValid;
 
     if (isValid) {
+        document.getElementById("failure").innerHTML = "";
         document.getElementById("success").innerHTML = "<div class = 'text-bold text-center'> Valid Form </div>";
+    } else {
+        document.getElementById("success").innerHTML = "";
+        document.getElementById("failure").innerHTML = "<div class = 'text-bold text-center'>Not a Valid Form to submit </div>";
     }
 });
 
